@@ -6,6 +6,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.rememberNavController
+import com.jamirodev.intentsapp.components.BottomNav
 import com.jamirodev.intentsapp.navigation.NavManager
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -20,7 +21,7 @@ fun HomeView() {
     )
     Scaffold(
         bottomBar = {
-
+            BottomNav(navController, navigationRoutes)
         }
     ) {
         NavManager(navController)
