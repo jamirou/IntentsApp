@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.jamirodev.intentsapp.components.CircleNumber
 
 @Composable
 fun PhoneView() {
@@ -22,7 +23,9 @@ fun PhoneView() {
         )
         LazyVerticalGrid(columns = GridCells.Fixed(3)) {
             items(items) { item ->
-                Text(text = item)
+                CircleNumber(number = item) {
+                    
+                }
             }
         }
     }
