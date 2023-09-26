@@ -34,7 +34,7 @@ import com.jamirodev.intentsapp.components.CircleNumber
 @Composable
 fun PhoneView() {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = "Phone", fontSize = 50.sp, fontWeight = FontWeight.Bold)
+        Text(text = "", fontSize = 50.sp, fontWeight = FontWeight.Bold)
         val items = listOf(
             "1", "2", "3",
             "4", "5", "6",
